@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Диаграммы обучения</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Моя команда</h1>
+    <div class="chart">
+      <div class="chart__container chart__container-one">
+        <h2>Обученность команды
+          <span><img src="images/icons/icon-info.svg" width="16" height="16" alt="Информация."></span>
+        </h2>
+        <p>Курсы и траектории</p>
+        <canvas id="teamTrainingChart"></canvas>
+      </div>
+      <div class="chart__container chart__container-two">
+        <h2>Прогресс сотрудников
+          <span><img src="images/icons/icon-info.svg" width="16" height="16" alt="Информация."></span>
+        </h2>
+        <canvas id="employeeProgressChart"></canvas>
+        <p>сотрудников завершили <br>обучение</p>
+      </div>
+      <div class="chart__container chart__container-three" id="attention-list">
+        <h2>Обратите внимание</h2>
+        <ul class="chart__container-list">
+          <li class="chart__container-item">
+            <img src="images/icons/icon-alarm.svg" width="16" height="16" alt="Внимание!"> Не прошли обучение: <input type="number" id="notTrained" value="1" min="0" max="5">
+          </li>
+          <li class="chart__container-item"><img src="images/icons/icon-alarm.svg" width="16" height="16" alt="Внимание!"> Не заходили на портал: <input type="number" id="notLoggedIn" value="1" min="0" max="5"></li>
+          <li class="chart__container-item"><img src="images/icons/icon-alarm.svg" width="16" height="16" alt="Внимание!"> Не были более 2 недель: <input type="number" id="notVisited" value="1" min="0" max="5"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
