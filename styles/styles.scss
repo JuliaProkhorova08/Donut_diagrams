@@ -1,0 +1,195 @@
+@font-face {
+  font-style: medium;
+  font-weight: 500;
+  font-family: "Stolzl";
+
+  font-display: swap;
+  src: url("../../fonts/stolzl/stolzl-medium.woff") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Stolzl";
+
+  font-display: swap;
+  src: url("../../fonts/stolzl/stolzl-book.woff") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Verdana";
+
+  font-display: swap;
+  src: url("../../fonts/verdana/verdana-regular.woff") format("woff2");
+}
+
+$bg-color: #f3f8fc;
+$color-red: #ec133d;
+$color-green: #00a75c;
+$color-orange: #e9841d;
+$color-blue: #b6d4ed;
+$color-grey: #e7f1f9;
+$ff-verdana: "Verdana", "Arial", sans-serif;
+$ff-stolzl: "Stolzl", "Arial", sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+
+  color: #000000;
+
+  background-color: $color-grey;
+}
+
+h1 {
+  margin-bottom: 24px;
+  margin-left: 40px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $ff-stolzl;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $ff-stolzl;
+}
+
+.wrapper {
+  padding: 94px;
+  padding-top: 78px;
+}
+
+.chart {
+  display: grid;
+  width: 1090px;
+
+  gap: 20px;
+  grid-template-columns: 443px 300px 307px;
+}
+
+.chart__container {
+  padding: 40px;
+  padding-top: 28px;
+
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0 2px 4px -2px rgba(24, 39, 75, 0.06);
+  box-shadow: 0 4px 4px -2px rgba(24, 39, 75, 0.04);
+}
+
+.chart__container-one {
+  position: relative;
+
+  width: 443px;
+}
+
+.chart__container-one h2 {
+  position: relative;
+}
+
+.chart__container-one span {
+  position: absolute;
+  top: 1px;
+  right: 145px;
+}
+
+.chart__container-one p {
+  position: absolute;
+  top: 80px;
+  left: 220px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-stolzl;
+}
+
+#teamTrainingChart {
+  margin-top: 18px;
+  margin-left: -35px;
+}
+
+.chart__container-two {
+  width: 300px;
+}
+
+.chart__container-two h2 {
+  position: relative;
+
+  margin-bottom: -9px;
+}
+
+#employeeProgressChart {
+  margin-left: -2px;
+}
+
+.chart__container-two span {
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.chart__container-two p {
+  margin-top: 0;
+  margin-bottom: -20px;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $ff-verdana;
+  text-align: center;
+}
+
+.chart__container-three {
+  width: 307px;
+}
+
+.chart__container-three h2 {
+  margin-bottom: 25px;
+}
+
+.chart__container-list {
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.chart__container-item {
+  position: relative;
+
+  margin-bottom: 19px;
+  margin-left: 34px;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-family: $ff-verdana;
+}
+
+.chart__container-item img {
+  position: absolute;
+  left: -22px;
+}
+
+input[type="number"] {
+  width: 25px;
+
+  border: none;
+}
